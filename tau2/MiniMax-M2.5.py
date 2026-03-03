@@ -23,6 +23,7 @@ task_cfg = TaskConfig(
     dataset_args={
         'tau2_bench': {
             'subset_list': ['airline', 'retail', 'telecom'], 
+            # 'aggregation': 'mean_and_pass_at_k',  # pass@k
             'extra_params': {
                 'user_model': _model,
                 'api_key': _api_key,
@@ -33,9 +34,9 @@ task_cfg = TaskConfig(
             }
         }
     },
-
-    eval_batch_size=5,
-    limit=5,
+    # repeats=4, # k for pass@k
+    eval_batch_size=16,
+    # limit=5,  ## for quick test
     generation_config={
         'temperature': 0.6,
     },
