@@ -1,8 +1,7 @@
 [project]
-name = "eval-llm"
+name = "eval-llm-tau2"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "tau2 评测子项目"
 requires-python = ">=3.13"
 dependencies = [
     "dotenv>=0.9.9",
