@@ -6,4 +6,5 @@ requires-python = ">=3.13"
 dependencies = [
     "bfcl-eval==2025.10.27.1",
     "evalscope>=1.4.2",
+    "soundfile>=0.13.1",
 ]
