@@ -1,0 +1,14 @@
+[project]
+name = "eval-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "evalscope>=1.4.2",
+    "tau2",
+]
+
+[tool.uv.sources]
+tau2 = { git = "https://github.com/sierra-research/tau2-bench", rev = "v0.2.0" }
